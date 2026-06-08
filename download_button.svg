@@ -1,0 +1,17 @@
+<svg width="240" height="64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bethbtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#B39DDB"/>
+    </linearGradient>
+    <filter id="shadow4">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#4FC3F7" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <a href="https://zeptohornbilltassel.github.io/nightcore/" target="_blank">
+    <rect width="240" height="64" rx="10" fill="url(#bethbtn)" filter="url(#shadow4)"/>
+    <rect x="2" y="2" width="236" height="60" rx="9" fill="white" opacity="0.1"/>
+    <text x="120" y="26" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" font-weight="600" fill="white" letter-spacing="1" opacity="0.85">⬇  DOWNLOAD FREE</text>
+    <text x="120" y="48" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="white">BethINI Pie · Latest</text>
+  </a>
+</svg>

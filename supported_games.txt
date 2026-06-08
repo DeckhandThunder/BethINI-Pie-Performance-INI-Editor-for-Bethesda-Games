@@ -1,0 +1,25 @@
+BETHINI PIE — SUPPORTED GAMES
+==============================
+
+Full Support (all settings available):
+  - The Elder Scrolls V: Skyrim Special Edition (SE)
+  - The Elder Scrolls V: Skyrim Anniversary Edition (AE)
+  - The Elder Scrolls V: Skyrim Legendary Edition (LE)
+  - The Elder Scrolls IV: Oblivion Remastered
+  - Starfield
+  - Fallout 4
+  - Fallout: New Vegas
+  - Fallout 3
+
+Partial Support (core settings only):
+  - Morrowind (basic INI editing)
+
+Not Supported (different engine):
+  - The Elder Scrolls Online
+  - Fallout 76
+  - Fallout Shelter
+
+Notes:
+  - Always close Mod Organizer 2 or Vortex before launching BethINI Pie
+  - For Skyrim VR, use the standard Skyrim SE profile
+  - Starfield requires the StarfieldPrefs.ini file to be present

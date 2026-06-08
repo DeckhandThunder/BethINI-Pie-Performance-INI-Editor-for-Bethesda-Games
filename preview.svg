@@ -1,0 +1,81 @@
+<svg width="1200" height="450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bethbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060b14"/>
+      <stop offset="100%" stop-color="#0c1625"/>
+    </linearGradient>
+    <linearGradient id="bethgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="50%" stop-color="#7986CB"/>
+      <stop offset="100%" stop-color="#B39DDB"/>
+    </linearGradient>
+    <linearGradient id="piegrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4FC3F7"/>
+      <stop offset="100%" stop-color="#7986CB"/>
+    </linearGradient>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="450" fill="url(#bethbg)"/>
+  <!-- Subtle dot grid -->
+  <g opacity="0.05" fill="#4FC3F7">
+    <circle cx="60" cy="60" r="1.5"/><circle cx="120" cy="60" r="1.5"/><circle cx="180" cy="60" r="1.5"/>
+    <circle cx="60" cy="120" r="1.5"/><circle cx="120" cy="120" r="1.5"/><circle cx="180" cy="120" r="1.5"/>
+    <circle cx="60" cy="180" r="1.5"/><circle cx="120" cy="180" r="1.5"/>
+    <circle cx="1020" cy="60" r="1.5"/><circle cx="1080" cy="60" r="1.5"/><circle cx="1140" cy="60" r="1.5"/>
+    <circle cx="1020" cy="120" r="1.5"/><circle cx="1080" cy="120" r="1.5"/><circle cx="1140" cy="120" r="1.5"/>
+  </g>
+  <!-- Pie chart decoration (right side) -->
+  <g transform="translate(1020, 200)">
+    <!-- Pie segments -->
+    <path d="M0,0 L0,-110 A110,110 0 0,1 95,-55 Z" fill="#4FC3F7" opacity="0.25"/>
+    <path d="M0,0 L95,-55 A110,110 0 0,1 110,0 Z" fill="#7986CB" opacity="0.25"/>
+    <path d="M0,0 L110,0 A110,110 0 0,1 55,95 Z" fill="#B39DDB" opacity="0.25"/>
+    <path d="M0,0 L55,95 A110,110 0 0,1 -110,0 Z" fill="#4FC3F7" opacity="0.15"/>
+    <path d="M0,0 L-110,0 A110,110 0 0,1 0,-110 Z" fill="#7986CB" opacity="0.2"/>
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="45" fill="#060b14"/>
+    <text x="0" y="6" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#4FC3F7" font-weight="bold">INI</text>
+  </g>
+  <!-- Left bar chart decoration -->
+  <g transform="translate(55, 220)" opacity="0.2">
+    <rect x="0" y="-80" width="18" height="80" rx="3" fill="#4FC3F7"/>
+    <rect x="26" y="-50" width="18" height="50" rx="3" fill="#7986CB"/>
+    <rect x="52" y="-95" width="18" height="95" rx="3" fill="#B39DDB"/>
+    <rect x="78" y="-35" width="18" height="35" rx="3" fill="#4FC3F7"/>
+    <rect x="104" y="-65" width="18" height="65" rx="3" fill="#7986CB"/>
+  </g>
+  <!-- Top label -->
+  <rect x="490" y="40" width="220" height="28" rx="14" fill="#4FC3F720" stroke="#4FC3F7" stroke-width="0.8"/>
+  <text x="600" y="59" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4FC3F7" letter-spacing="2">PERFORMANCE EDITOR</text>
+  <!-- Main title -->
+  <text x="560" y="160" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="86" font-weight="900" fill="url(#bethgrad)" filter="url(#softglow)" letter-spacing="1">BethINI Pie</text>
+  <!-- Subtitle -->
+  <text x="560" y="208" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#8899cc">Advanced INI editor for Bethesda game engine titles</text>
+  <!-- Game badges -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600">
+    <rect x="185" y="255" width="120" height="32" rx="6" fill="#4FC3F715" stroke="#4FC3F7" stroke-width="0.7"/>
+    <text x="245" y="276" text-anchor="middle" fill="#4FC3F7">Skyrim SE</text>
+    <rect x="318" y="255" width="120" height="32" rx="6" fill="#7986CB15" stroke="#7986CB" stroke-width="0.7"/>
+    <text x="378" y="276" text-anchor="middle" fill="#7986CB">Fallout 4</text>
+    <rect x="451" y="255" width="120" height="32" rx="6" fill="#B39DDB15" stroke="#B39DDB" stroke-width="0.7"/>
+    <text x="511" y="276" text-anchor="middle" fill="#B39DDB">Starfield</text>
+    <rect x="584" y="255" width="120" height="32" rx="6" fill="#4FC3F715" stroke="#4FC3F7" stroke-width="0.7"/>
+    <text x="644" y="276" text-anchor="middle" fill="#4FC3F7">Oblivion</text>
+    <rect x="717" y="255" width="120" height="32" rx="6" fill="#7986CB15" stroke="#7986CB" stroke-width="0.7"/>
+    <text x="777" y="276" text-anchor="middle" fill="#7986CB">Fallout NV</text>
+  </g>
+  <!-- Stats row -->
+  <g font-family="'Segoe UI', Arial, sans-serif">
+    <text x="280" y="330" text-anchor="middle" font-size="28" font-weight="900" fill="#4FC3F7" filter="url(#softglow)">8+</text>
+    <text x="280" y="350" text-anchor="middle" font-size="12" fill="#667799">Games Supported</text>
+    <text x="480" y="330" text-anchor="middle" font-size="28" font-weight="900" fill="#7986CB" filter="url(#softglow)">500+</text>
+    <text x="480" y="350" text-anchor="middle" font-size="12" fill="#667799">INI Options</text>
+    <text x="680" y="330" text-anchor="middle" font-size="28" font-weight="900" fill="#B39DDB" filter="url(#softglow)">1-Click</text>
+    <text x="680" y="350" text-anchor="middle" font-size="12" fill="#667799">Presets</text>
+    <text x="880" y="330" text-anchor="middle" font-size="28" font-weight="900" fill="#4FC3F7" filter="url(#softglow)">Free</text>
+    <text x="880" y="350" text-anchor="middle" font-size="12" fill="#667799">Always &amp; Forever</text>
+  </g>
+</svg>
